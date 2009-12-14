@@ -1,0 +1,1386 @@
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=') AND ("translations".locale_id = 2) [0m
+Cache write: es:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 2 AND (raw_key like 'String.%')) [0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=') AND ("translations".locale_id = 2) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'String', NULL, 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=', 1)[0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+Cache write: es:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'Message Center', 'Message Center', 'MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'Message Center', NULL, 'MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=') AND ("translations".locale_id = 2) [0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=') AND ("translations".locale_id = 1) LIMIT 1[0m
+Cache write: es:MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=
+Cache exist?: es:MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=
+Cache read: es:MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'Message Center', 'Message Center', 'MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=', 1)[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'Message Center', NULL, 'MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=') AND ("translations".locale_id = 2) [0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=') AND ("translations".locale_id = 1) LIMIT 1[0m
+Cache write: es:MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+Cache exist?: es:MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=
+Cache read: es:MzhlYTVjZWQ2OWM0MDQ0OGQyYTQ1MThlZmNmZjNhMDE=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'String', 'English String', 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=') AND ("translations".locale_id = 2) [0m
+Cache write: es:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;36;1mTranslation Load (0.3ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'String', NULL, 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=', 1)[0m
+Cache write: es:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=') AND ("translations".locale_id = 2) [0m
+Cache write: es:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 2 AND (raw_key like 'String.%')) [0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=') AND ("translations".locale_id = 2) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'String', NULL, 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=', 1)[0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+Cache write: es:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.order', NULL, 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 2) [0m
+Cache write: es:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) [0m
+  [4;35;1mTranslation Load (0.3ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+Cache write: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 2 AND (raw_key like 'date.order.%')) [0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 2) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.order', NULL, 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=', 1)[0m
+  [4;35;1mTranslation Load (0.3ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+Cache write: es:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'Fred', 'Fred has been {{some_value}}!!', 'ZjJjYjMyMTY2Zjc3ZjMzZTgwMzExYmU0MGM5NzQ2NmU=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'Fred', 'Fred ha sido {{some_value}}!!', 'ZjJjYjMyMTY2Zjc3ZjMzZTgwMzExYmU0MGM5NzQ2NmU=', 1)[0m
+  [4;36;1mLocale Load (0.3ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:ZjJjYjMyMTY2Zjc3ZjMzZTgwMzExYmU0MGM5NzQ2NmU=
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZjJjYjMyMTY2Zjc3ZjMzZTgwMzExYmU0MGM5NzQ2NmU=') AND ("translations".locale_id = 2) [0m
+Cache write: es:ZjJjYjMyMTY2Zjc3ZjMzZTgwMzExYmU0MGM5NzQ2NmU=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.messages.blank', '{{count}} error prohibited this {{model}} from being saved', 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=') AND ("translations".locale_id = 2) [0m
+Cache write: es:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;36;1mTranslation Load (0.3ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'activerecord.errors.messages.blank', NULL, 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+Cache write: es:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.2ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.template.header', '1 error prohibited this {{model}} from being saved', 'NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.template.header', '{{count}} errors prohibited this {{model}} from being saved', 'NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=', 0)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=') AND ("translations".locale_id = 2) [0m
+Cache write: es:NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=
+  [4;35;1mTranslation Load (0.4ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'activerecord.errors.template.header', NULL, 'NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=', 0)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'activerecord.errors.template.header', NULL, 'NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=', 1)[0m
+Cache write: es:NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mTranslation Load (0.3ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+Cache exist?: es:NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=
+Cache read: es:NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."id" = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;36;1mTranslation Load (0.3ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;36;1mLocale Create (0.1ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.messages.blank', 'is blank moron!', 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 2) [0m
+Cache write: es:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+Cache exist?: es:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=') AND ("translations".locale_id = 2) [0m
+Cache write: es:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache exist?: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache exist?: es:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=') AND ("translations".locale_id = 2) [0m
+Cache write: es:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+Cache exist?: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'activerecord.errors.messages.blank', NULL, 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+Cache write: es:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;36;1mLocale Create (0.1ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.messages.blank', 'is blank moron!', 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.models.translation.blank', 'translation blank', 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 2) [0m
+Cache write: es:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+Cache exist?: es:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=') AND ("translations".locale_id = 2) [0m
+Cache write: es:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache exist?: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'activerecord.errors.models.translation.blank', NULL, 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=', 1)[0m
+Cache write: es:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+Cache read: es:activerecord.errors.models.translation.blank ("translation blank")
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.messages.blank', 'is blank moron!', 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.models.translation.blank', 'translation blank', 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=', 1)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.models.translation.attributes.locale.blank', 'translation locale blank', 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 2) [0m
+Cache write: es:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'activerecord.errors.models.translation.attributes.locale.blank', NULL, 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=', 1)[0m
+Cache write: es:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.2ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.messages.blank', 'is blank moron!', 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'This is a custom message!', 'This is a custom message!', 'NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 2) [0m
+Cache write: es:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+Cache exist?: es:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=') AND ("translations".locale_id = 2) [0m
+Cache write: es:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache exist?: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache exist?: es:NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=') AND ("translations".locale_id = 2) [0m
+Cache write: es:NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=
+Cache exist?: en:NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'This is a custom message!', NULL, 'NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=', 1)[0m
+Cache write: es:NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;36;1mLocale Create (0.1ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.month_names', 'January', 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 1)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.month_names', 'February', 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 2)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.month_names', 'March', 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 3)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.month_names', 'Enero', 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.month_names', 'Febrero', 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 2)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.month_names', 'Marzo', 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 3)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+  [4;36;1mTranslation Load (0.4ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=') AND ("translations".locale_id = 2) [0m
+Cache write: es:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+Cache exist?: es:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+Cache read: es:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."id" = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mTranslation Load (0.3ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."id" = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;36;1mTranslation Load (0.4ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;36;1mLocale Create (0.1ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.month_names', 'January', 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 1)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.month_names', 'February', 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 2)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.month_names', 'March', 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 3)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=') AND ("translations".locale_id = 2) [0m
+Cache write: es:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+  [4;35;1mTranslation Load (0.4ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.month_names', NULL, 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.month_names', NULL, 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 2)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.month_names', NULL, 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 3)[0m
+Cache write: es:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+Cache exist?: es:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+Cache read: es:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."id" = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mTranslation Load (0.3ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."id" = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;36;1mTranslation Load (0.3ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;36;1mLocale Create (0.1ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Sunday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 0)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Monday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Tuesday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 2)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Wednesday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 3)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Thursday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 4)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Friday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 5)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Saturday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 6)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=') AND ("translations".locale_id = 2) [0m
+Cache write: es:MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=
+  [4;35;1mTranslation Load (0.7ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.day_names', NULL, 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 0)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.day_names', NULL, 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 1)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.day_names', NULL, 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 2)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.day_names', NULL, 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 3)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.day_names', NULL, 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 4)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.day_names', NULL, 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 5)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.day_names', NULL, 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 6)[0m
+Cache write: es:MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=
+Cache exist?: es:MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=
+Cache read: es:MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=
+  [4;35;1mLocale Load (0.3ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."id" = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mTranslation Load (0.6ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."id" = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;36;1mTranslation Load (0.6ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;36;1mLocale Create (0.1ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Sunday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 0)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Monday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Tuesday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 2)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Wednesday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 3)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Thursday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 4)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Friday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 5)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Saturday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 6)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.day_names', NULL, 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 0)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.day_names', NULL, 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 1)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.day_names', NULL, 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 2)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.day_names', NULL, 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 3)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.day_names', NULL, 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 4)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.day_names', NULL, 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 5)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.day_names', NULL, 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 6)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=
+  [4;36;1mTranslation Load (0.7ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=') AND ("translations".locale_id = 2) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 0 AND "translations"."key" = 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 2 AND "translations"."key" = 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 3 AND "translations"."key" = 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Load (0.3ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 4 AND "translations"."key" = 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;35;1mTranslation Load (0.3ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 5 AND "translations"."key" = 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Load (0.3ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 6 AND "translations"."key" = 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=') AND ("translations".locale_id = 1) LIMIT 1[0m
+Cache write: es:MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=
+Cache exist?: es:MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=
+Cache read: es:MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."id" = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mTranslation Load (0.6ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."id" = 2) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;36;1mTranslation Load (0.6ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;36;1mLocale Create (0.1ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.order', '--- :year
+', 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=', 0)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.order', '--- :month
+', 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=', 1)[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.order', '--- :day
+', 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=', 2)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 2) [0m
+Cache write: es:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;35;1mTranslation Load (0.4ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.order', NULL, 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=', 0)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.order', NULL, 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=', 1)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'date.order', NULL, 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=', 2)[0m
+Cache write: es:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mTranslation Load (0.3ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;36;1mTranslation Load (0.3ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'String.%')) [0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'String', 'String', 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=', 1)[0m
+Cache write: en:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'String', 'Value', 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+Cache exist?: en:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+Cache read: en:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.3ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:OWFjYjQ0NTQ5YjQxNTYzNjk3YmI0OTAxNDRlYzYyNTg=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'OWFjYjQ0NTQ5YjQxNTYzNjk3YmI0OTAxNDRlYzYyNTg=') AND ("translations".locale_id = 1) [0m
+Cache write: en:OWFjYjQ0NTQ5YjQxNTYzNjk3YmI0OTAxNDRlYzYyNTg=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'status.%')) [0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'OWFjYjQ0NTQ5YjQxNTYzNjk3YmI0OTAxNDRlYzYyNTg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'status', 'status', 'OWFjYjQ0NTQ5YjQxNTYzNjk3YmI0OTAxNDRlYzYyNTg=', 1)[0m
+Cache write: en:OWFjYjQ0NTQ5YjQxNTYzNjk3YmI0OTAxNDRlYzYyNTg=
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+Cache exist?: en:OWFjYjQ0NTQ5YjQxNTYzNjk3YmI0OTAxNDRlYzYyNTg=
+Cache read: en:OWFjYjQ0NTQ5YjQxNTYzNjk3YmI0OTAxNDRlYzYyNTg=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'String', 'Value', 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MjcxMTgzMjYwMDZkMzgyOTY2N2E0MDBhZDIzZDVkOTg=
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.2ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.order', NULL, 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) [0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+Cache write: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'date.order.%')) [0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+Cache write: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'date.order.%')) [0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.order', NULL, 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=', 1)[0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+Cache write: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+Cache exist?: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+Cache read: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) [0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+Cache write: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'date.order.%')) [0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+Cache write: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."id" = 1) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.2ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.order', '--- :year
+', 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=', 0)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.order', '--- :month
+', 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=', 1)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.order', '--- :day
+', 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=', 2)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;36;1mTranslation Load (0.4ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mTranslation Load (0.3ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.4ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+Cache write: en:NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=
+Cache read: en:NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+Cache write: en:NDUxMTQ0YTRkNTk4NzFmZDY4MWMzOWNjZjRkYWE2NGU=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;36;1mLocale Load (0.3ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'date.order.%')) [0m
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.order', NULL, 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=', 1)[0m
+  [4;36;1mTranslation Load (0.3ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+Cache write: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.2ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'blah.%')) [0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'blah', 'blah', 'NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=', 1)[0m
+Cache write: en:NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=
+Cache read: en:NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.2ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, '.date.order', NULL, 'NDUxMTQ0YTRkNTk4NzFmZDY4MWMzOWNjZjRkYWE2NGU=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'date.order.%')) [0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.order', NULL, 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=', 1)[0m
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+Cache write: en:MDFkNjAxODU4YzkxNmZkOGNmNzFjMTZlNWRkYzhkODg=
+Cache read: en:NDUxMTQ0YTRkNTk4NzFmZDY4MWMzOWNjZjRkYWE2NGU=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.models.blank', 'post', 'Y2JhMzExZGU2YjdhODVmNjY2MjFlZjUzZGI0NzIxOTg=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MTNhMjhiMzkxMDI1MWU0N2U4ZjMzMWZjMTM5NGU0OWY=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MTNhMjhiMzkxMDI1MWU0N2U4ZjMzMWZjMTM5NGU0OWY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MTNhMjhiMzkxMDI1MWU0N2U4ZjMzMWZjMTM5NGU0OWY=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:NDJiOTAxOTZiNDg3YzU0MDY5MDk3YTY4ZmU5OGFiNmY=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'NDJiOTAxOTZiNDg3YzU0MDY5MDk3YTY4ZmU5OGFiNmY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NDJiOTAxOTZiNDg3YzU0MDY5MDk3YTY4ZmU5OGFiNmY=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'post.%')) [0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'NDJiOTAxOTZiNDg3YzU0MDY5MDk3YTY4ZmU5OGFiNmY=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'post', 'post', 'NDJiOTAxOTZiNDg3YzU0MDY5MDk3YTY4ZmU5OGFiNmY=', 1)[0m
+Cache write: en:NDJiOTAxOTZiNDg3YzU0MDY5MDk3YTY4ZmU5OGFiNmY=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.2ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:YjJjNjAzZGQ0MmExZjRlMTFiZmNiMTEyNTRlMWU1OTE=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'YjJjNjAzZGQ0MmExZjRlMTFiZmNiMTEyNTRlMWU1OTE=') AND ("translations".locale_id = 1) [0m
+Cache write: en:YjJjNjAzZGQ0MmExZjRlMTFiZmNiMTEyNTRlMWU1OTE=
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:ZjE1YzFjYWU3ODgyNDQ4YjNmYjA0MDQ2ODJlMTdlNjE=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZjE1YzFjYWU3ODgyNDQ4YjNmYjA0MDQ2ODJlMTdlNjE=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ZjE1YzFjYWU3ODgyNDQ4YjNmYjA0MDQ2ODJlMTdlNjE=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'Content.%')) [0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'ZjE1YzFjYWU3ODgyNDQ4YjNmYjA0MDQ2ODJlMTdlNjE=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'Content', 'Content', 'ZjE1YzFjYWU3ODgyNDQ4YjNmYjA0MDQ2ODJlMTdlNjE=', 1)[0m
+Cache write: en:ZjE1YzFjYWU3ODgyNDQ4YjNmYjA0MDQ2ODJlMTdlNjE=
+Cache exist?: en:YjJjNjAzZGQ0MmExZjRlMTFiZmNiMTEyNTRlMWU1OTE=
+Cache read: en:YjJjNjAzZGQ0MmExZjRlMTFiZmNiMTEyNTRlMWU1OTE=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'YjJjNjAzZGQ0MmExZjRlMTFiZmNiMTEyNTRlMWU1OTE=') AND ("translations".locale_id = 1) [0m
+Cache write: en:YjJjNjAzZGQ0MmExZjRlMTFiZmNiMTEyNTRlMWU1OTE=
+Cache exist?: en:ZjE1YzFjYWU3ODgyNDQ4YjNmYjA0MDQ2ODJlMTdlNjE=
+Cache read: en:ZjE1YzFjYWU3ODgyNDQ4YjNmYjA0MDQ2ODJlMTdlNjE=
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.2ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:M2M2ZTBiOGE5YzE1MjI0YTgyMjhiOWE5OGNhMTUzMWQ=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'M2M2ZTBiOGE5YzE1MjI0YTgyMjhiOWE5OGNhMTUzMWQ=') AND ("translations".locale_id = 1) [0m
+Cache write: en:M2M2ZTBiOGE5YzE1MjI0YTgyMjhiOWE5OGNhMTUzMWQ=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:NzIxNWVlOWM3ZDlkYzIyOWQyOTIxYTQwZTg5OWVjNWY=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NzIxNWVlOWM3ZDlkYzIyOWQyOTIxYTQwZTg5OWVjNWY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NzIxNWVlOWM3ZDlkYzIyOWQyOTIxYTQwZTg5OWVjNWY=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like ' .%')) [0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'NzIxNWVlOWM3ZDlkYzIyOWQyOTIxYTQwZTg5OWVjNWY=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, ' ', ' ', 'NzIxNWVlOWM3ZDlkYzIyOWQyOTIxYTQwZTg5OWVjNWY=', 1)[0m
+Cache write: en:NzIxNWVlOWM3ZDlkYzIyOWQyOTIxYTQwZTg5OWVjNWY=
+Cache exist?: en:M2M2ZTBiOGE5YzE1MjI0YTgyMjhiOWE5OGNhMTUzMWQ=
+Cache read: en:M2M2ZTBiOGE5YzE1MjI0YTgyMjhiOWE5OGNhMTUzMWQ=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'M2M2ZTBiOGE5YzE1MjI0YTgyMjhiOWE5OGNhMTUzMWQ=') AND ("translations".locale_id = 1) [0m
+Cache write: en:M2M2ZTBiOGE5YzE1MjI0YTgyMjhiOWE5OGNhMTUzMWQ=
+Cache exist?: en:NzIxNWVlOWM3ZDlkYzIyOWQyOTIxYTQwZTg5OWVjNWY=
+Cache read: en:NzIxNWVlOWM3ZDlkYzIyOWQyOTIxYTQwZTg5OWVjNWY=
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mTranslation Load (0.3ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'Fred', 'Fred has been {{some_value}}!!', 'ZjJjYjMyMTY2Zjc3ZjMzZTgwMzExYmU0MGM5NzQ2NmU=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:ZjJjYjMyMTY2Zjc3ZjMzZTgwMzExYmU0MGM5NzQ2NmU=
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZjJjYjMyMTY2Zjc3ZjMzZTgwMzExYmU0MGM5NzQ2NmU=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ZjJjYjMyMTY2Zjc3ZjMzZTgwMzExYmU0MGM5NzQ2NmU=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.4ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'Fred {{some_value}}', 'Fred {{some_value}}!!', 'OWFmNmEzODE3NjUxYTc3MGFmYzQ0YjcxNzJkZDcyMWQ=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:OWFmNmEzODE3NjUxYTc3MGFmYzQ0YjcxNzJkZDcyMWQ=
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'OWFmNmEzODE3NjUxYTc3MGFmYzQ0YjcxNzJkZDcyMWQ=') AND ("translations".locale_id = 1) [0m
+Cache write: en:OWFmNmEzODE3NjUxYTc3MGFmYzQ0YjcxNzJkZDcyMWQ=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.messages.blank', '{{count}} errors prohibited this {{model}} from being saved', 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;36;1mLocale Load (0.3ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.messages.blank', 'dude', 'M2YxNTJjMzA5YWU0MDQxOWJjMjY0NDVkOWZhODQxYTk=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:M2YxNTJjMzA5YWU0MDQxOWJjMjY0NDVkOWZhODQxYTk=
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'M2YxNTJjMzA5YWU0MDQxOWJjMjY0NDVkOWZhODQxYTk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:M2YxNTJjMzA5YWU0MDQxOWJjMjY0NDVkOWZhODQxYTk=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.template.header', '1 error prohibited this {{model}} from being saved', 'NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=', 1)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.template.header', '{{count}} errors prohibited this {{model}} from being saved', 'NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=', 0)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=
+  [4;36;1mTranslation Load (0.3ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mTranslation Load (0.3ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+Cache exist?: en:NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=
+Cache read: en:NGNmMTY5NmJiN2M2ODkzMGUzY2QyNzVmN2ZmMmFmMDk=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.2ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.messages.blank', 'is blank moron!', 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache exist?: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.messages.blank', 'is blank moron!', 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.models.translation.blank', 'translation blank', 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.messages.blank', 'is blank moron!', 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.models.translation.blank', 'translation blank', 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.models.translation.attributes.locale.blank', 'translation locale blank', 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;35;1mTranslation Load (0.3ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.messages.blank', 'is blank moron!', 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache exist?: en:NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'This is a custom message!.%')) [0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'This is a custom message!', 'This is a custom message!', 'NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=', 1)[0m
+Cache write: en:NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mTranslation Load (0.3ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.messages.blank', 'is blank moron!', 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'This is a custom message!', 'This is a custom message!', 'NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache exist?: en:NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.messages.blank', 'is blank moron!', 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'This is a custom message!', 'This is a custom message!', 'NWMyY2U2OWJkZGFlMmVjZWJlOTg3OWRlNjhlMTRhZDQ=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache exist?: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.month_names', 'January', 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.month_names', 'February', 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 2)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.month_names', 'March', 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 3)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+  [4;36;1mTranslation Load (0.6ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+Cache exist?: en:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+Cache read: en:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."id" = 1) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mTranslation Load (0.5ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.month_names', 'January', 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.month_names', 'February', 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 2)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.month_names', 'March', 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=', 3)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+  [4;36;1mTranslation Load (0.4ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+Cache exist?: en:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+Cache read: en:NGZiMWY2ZTA5YzJlZTViNmVkOTM1ZGZmNDYxMzEyNWU=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.2ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Sunday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 0)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Monday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Tuesday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 2)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Wednesday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 3)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Thursday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 4)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Friday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 5)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'date.day_names', 'Saturday', 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=', 6)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=
+  [4;35;1mTranslation Load (0.7ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MDY3NDEwMWU0N2I2ZDNlMzI2MTAzZGFmZTczZTg4MmE=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."id" = 1) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;36;1mTranslation Load (0.6ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'number.format.separator', '.', 'YWUzZjExMWNmMmVhZDE2ZDcwYzAzZTgyNDkxYWMwYTg=', 1)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'number.format.precision', 3, 'OWVjZDMwZjFmZjgxM2ExZDU4M2FjMjI1NGY2MTViOGY=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'number.format.delimiter', ',', 'ZTU1MWZkNmNiZTFjYWZhZGE2NGMzNWEwYjVjOGYyOTQ=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MWFlMmY4NmY2ZTI1MmE4NDcxMzZlNGE3NzAxZTgzNDg=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MWFlMmY4NmY2ZTI1MmE4NDcxMzZlNGE3NzAxZTgzNDg=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MWFlMmY4NmY2ZTI1MmE4NDcxMzZlNGE3NzAxZTgzNDg=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mTranslation Load (0.4ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'number.format.%')) [0m
+Cache write: en:MWFlMmY4NmY2ZTI1MmE4NDcxMzZlNGE3NzAxZTgzNDg=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.2ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'nested.a', 'b', 'NDVjOWYyYWZkNTIxYzRhMTk3MWNhOTZhODlkYzM5NWI=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'nested.c.d', 'e', 'YzQ2ODllZGFhZWU0NWI4NWM1MmFlMDE2MTdhYzQxZTM=', 1)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'nested.c.f', 'g', 'ZDE4YzkzYWMyN2FiYzQ3M2RhZWE5ZmY4NzIxZjM5MjA=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:ODNkMzc4NGVhNjI1MThlYWZjNjBlOThkODRmODc3YWQ=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'ODNkMzc4NGVhNjI1MThlYWZjNjBlOThkODRmODc3YWQ=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ODNkMzc4NGVhNjI1MThlYWZjNjBlOThkODRmODc3YWQ=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mTranslation Load (0.4ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'nested.%')) [0m
+Cache write: en:ODNkMzc4NGVhNjI1MThlYWZjNjBlOThkODRmODc3YWQ=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.2ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:Njc2ZjQwODE3OWI5ZTIyNjk0MDY3YTFjMTAwN2U5OGU=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'Njc2ZjQwODE3OWI5ZTIyNjk0MDY3YTFjMTAwN2U5OGU=') AND ("translations".locale_id = 1) [0m
+Cache write: en:Njc2ZjQwODE3OWI5ZTIyNjk0MDY3YTFjMTAwN2U5OGU=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'number.format\\.%')) [0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'Njc2ZjQwODE3OWI5ZTIyNjk0MDY3YTFjMTAwN2U5OGU=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'number.format\', 'number.format\', 'Njc2ZjQwODE3OWI5ZTIyNjk0MDY3YTFjMTAwN2U5OGU=', 1)[0m
+Cache write: en:Njc2ZjQwODE3OWI5ZTIyNjk0MDY3YTFjMTAwN2U5OGU=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'number.format.', 'this should be a normal leaf', 'ZjY4NTQxYWM4NjdhYzlmNjg1NzM5MjVlMjc4ZmE5MjM=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:ZjY4NTQxYWM4NjdhYzlmNjg1NzM5MjVlMjc4ZmE5MjM=
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZjY4NTQxYWM4NjdhYzlmNjg1NzM5MjVlMjc4ZmE5MjM=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ZjY4NTQxYWM4NjdhYzlmNjg1NzM5MjVlMjc4ZmE5MjM=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'Hello World', 'Hello World', 'YjEwYThkYjE2NGUwNzU0MTA1YjdhOTliZTcyZTNmZTU=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'YjEwYThkYjE2NGUwNzU0MTA1YjdhOTliZTcyZTNmZTU=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.2ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;36;1mLocale Create (0.1ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'Hello World', 'Hello World', 'YjEwYThkYjE2NGUwNzU0MTA1YjdhOTliZTcyZTNmZTU=', 1)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'Hello World', NULL, 'YjEwYThkYjE2NGUwNzU0MTA1YjdhOTliZTcyZTNmZTU=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'YjEwYThkYjE2NGUwNzU0MTA1YjdhOTliZTcyZTNmZTU=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;36;1mLocale Create (0.1ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'Hello World', NULL, 'YjEwYThkYjE2NGUwNzU0MTA1YjdhOTliZTcyZTNmZTU=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'YjEwYThkYjE2NGUwNzU0MTA1YjdhOTliZTcyZTNmZTU=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.3ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(NULL, 'Hello World', 'Hello World', 'YjEwYThkYjE2NGUwNzU0MTA1YjdhOTliZTcyZTNmZTU=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;36;1mLocale Create (0.1ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'key1', 'translated1', 'YzJhZGQ2OTRiZjk0MmRjNzdiMzc2NTkyZDljODYyY2Q=', 1)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'key2', 'translated2', 'NzhmODI1YWFhMDEwMzMxOWFhYTFhMzBiZjRmZTNhZGE=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'key3', NULL, 'MzYzMTU3ODUzOGEyZDZiYTU4NzliMzFhOWE0MmYyOTA=', 1)[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mTranslation Load (0.4ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'key1', 'translated1', 'YzJhZGQ2OTRiZjk0MmRjNzdiMzc2NTkyZDljODYyY2Q=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'key2', 'translated2', 'NzhmODI1YWFhMDEwMzMxOWFhYTFhMzBiZjRmZTNhZGE=', 1)[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'key3', NULL, 'MzYzMTU3ODUzOGEyZDZiYTU4NzliMzFhOWE0MmYyOTA=', 1)[0m
+  [4;35;1mTranslation Load (0.3ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) AND (("translations"."value" IS NULL) AND ("translations".locale_id = 2)) ORDER BY raw_key[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'key1', 'translated1', 'YzJhZGQ2OTRiZjk0MmRjNzdiMzc2NTkyZDljODYyY2Q=', 1)[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'key2', 'translated2', 'NzhmODI1YWFhMDEwMzMxOWFhYTFhMzBiZjRmZTNhZGE=', 1)[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'key3', NULL, 'MzYzMTU3ODUzOGEyZDZiYTU4NzliMzFhOWE0MmYyOTA=', 1)[0m
+  [4;35;1mTranslation Load (0.4ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) AND ((value IS NOT NULL) AND ("translations".locale_id = 2)) ORDER BY raw_key[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'key1', 'translated1', 'YzJhZGQ2OTRiZjk0MmRjNzdiMzc2NTkyZDljODYyY2Q=', 1)[0m
+  [4;35;1mTranslation Create (0.1ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'key2', 'translated2', 'NzhmODI1YWFhMDEwMzMxOWFhYTFhMzBiZjRmZTNhZGE=', 1)[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'key3', NULL, 'MzYzMTU3ODUzOGEyZDZiYTU4NzliMzFhOWE0MmYyOTA=', 1)[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE (((value IS NOT NULL) AND ("translations".locale_id = 2)) AND ("translations".locale_id = 2)) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;36;1mLocale Create (0.1ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'Hello World', 'Hello World', 'YjEwYThkYjE2NGUwNzU0MTA1YjdhOTliZTcyZTNmZTU=', 1)[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'Hello World', NULL, 'YjEwYThkYjE2NGUwNzU0MTA1YjdhOTliZTcyZTNmZTU=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.2ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;36;1mLocale Create (0.1ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;35;1mLocale Load (0.3ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Load (0.3ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'gk') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'gk')[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE (code != 'en') [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE (code != 'en') [0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE (code != 'en') [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;36;1mLocale Create (0.1ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.2ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'key', 'Hello World', 'M2M2ZTBiOGE5YzE1MjI0YTgyMjhiOWE5OGNhMTUzMWQ=', 1)[0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT "translations".id FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'M2M2ZTBiOGE5YzE1MjI0YTgyMjhiOWE5OGNhMTUzMWQ=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.2ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;36;1mLocale Create (0.1ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) AND (("translations"."value" IS NULL) AND ("translations".locale_id = 2)) ORDER BY raw_key[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 2) AND ((value IS NOT NULL) AND ("translations".locale_id = 2)) ORDER BY raw_key[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.4ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;36;1mLocale Create (0.1ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT count(*) AS count_all FROM "translations" WHERE (((value IS NOT NULL) AND ("translations".locale_id = 2)) AND ("translations".locale_id = 2)) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSELECT count(*) AS count_all FROM "translations" WHERE ("translations".locale_id = 2) [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES('English', 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.2ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" IS NULL) LIMIT 1[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'is now friends with', 'ahora es con amigos', 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=') AND ("translations".locale_id = 2) [0m
+Cache write: es:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'is now friends with.%')) [0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'is now friends with', 'is now friends with', 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=', 1)[0m
+Cache write: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'is now friends with.%')) [0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'is now friends with', 'is now friends with', 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=', 1)[0m
+Cache write: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+Cache exist?: en:ZmM5ZDQxNGFkMGFjYmU0YTc0NGU2MTBjZGFlZGM3YjQ=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZmM5ZDQxNGFkMGFjYmU0YTc0NGU2MTBjZGFlZGM3YjQ=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ZmM5ZDQxNGFkMGFjYmU0YTc0NGU2MTBjZGFlZGM3YjQ=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'and is happy, .%')) [0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'ZmM5ZDQxNGFkMGFjYmU0YTc0NGU2MTBjZGFlZGM3YjQ=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'and is happy, ', 'and is happy, ', 'ZmM5ZDQxNGFkMGFjYmU0YTc0NGU2MTBjZGFlZGM3YjQ=', 1)[0m
+Cache write: en:ZmM5ZDQxNGFkMGFjYmU0YTc0NGU2MTBjZGFlZGM3YjQ=
+Cache exist?: en:NWE1MjYyODQ1ZmMzMmVhNTE1YmMyMGFlOGJhMzA5Mzg=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'NWE1MjYyODQ1ZmMzMmVhNTE1YmMyMGFlOGJhMzA5Mzg=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NWE1MjYyODQ1ZmMzMmVhNTE1YmMyMGFlOGJhMzA5Mzg=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'claps his hands!.%')) [0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'NWE1MjYyODQ1ZmMzMmVhNTE1YmMyMGFlOGJhMzA5Mzg=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'claps his hands!', 'claps his hands!', 'NWE1MjYyODQ1ZmMzMmVhNTE1YmMyMGFlOGJhMzA5Mzg=', 1)[0m
+Cache write: en:NWE1MjYyODQ1ZmMzMmVhNTE1YmMyMGFlOGJhMzA5Mzg=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'is now friends with.%')) [0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'is now friends with', 'is now friends with', 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=', 1)[0m
+Cache write: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.3ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+Cache exist?: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'is now friends with.%')) [0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'is now friends with', 'is now friends with', 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=', 1)[0m
+Cache write: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.2ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.2ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.2ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.2ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.3ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'is now friends with.%')) [0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'is now friends with', 'is now friends with', 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=', 1)[0m
+Cache write: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.2ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'is now friends with.%')) [0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'is now friends with', 'is now friends with', 'MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=', 1)[0m
+Cache write: en:MWMyZmI1OGYzYzI1ZDA5ZWQ2OGJiMWI4YWM0ZmEzNmI=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES('English', 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES('Spanish', 'es')[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=') AND ("translations".locale_id = 2) [0m
+Cache write: es:MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 2 AND (raw_key like 'dog.%')) [0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=') AND ("translations".locale_id = 2) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'dog', NULL, 'MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=', 1)[0m
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=') AND ("translations".locale_id = 1) LIMIT 1[0m
+Cache write: es:MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" LIMIT 1[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mLocale Create (0.4ms)[0m   [0;1mINSERT INTO "locales" ("name", "code") VALUES('English', 'en')[0m
+  [4;35;1mLocale Load (0.3ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=
+Cache read: en:MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=') AND ("translations".locale_id = 1) [0m
+Cache write: en:MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'dog.%')) [0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;36;1mTranslation Create (0.2ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'dog', 'dog', 'MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=', 1)[0m
+Cache write: en:MDZkODBlYjBjNTBiNDlhNTA5YjQ5ZjI0MjRlOGM4MDU=
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" LIMIT 1[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" [0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT * FROM "locales" [0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT * FROM "locales" [0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT * FROM "locales" [0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT * FROM "locales" [0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT * FROM "locales" [0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT * FROM "locales" [0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT * FROM "locales" [0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT * FROM "locales" [0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT * FROM "locales" [0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT * FROM "locales" [0m
+
+
+Processing TranslationsController#destroy (for 0.0.0.0 at 2009-12-14 13:00:28) [DELETE]
+  Parameters: {"locale_id"=>"en", "id"=>"37"}
+Redirected to http://test.host/locales/en/translations
+Completed in 3ms (DB: 138) | 302 Found [http://test.host/locales/en/translations/37]
+
+
+Processing TranslationsController#destroy (for 0.0.0.0 at 2009-12-14 13:00:28) [DELETE]
+  Parameters: {"locale_id"=>"en", "id"=>"1"}
+Redirected to http://test.host/locales/en/translations
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/locales/en/translations/1]
+
+
+Processing TranslationsController#update (for 0.0.0.0 at 2009-12-14 13:00:28) [PUT]
+  Parameters: {"locale_id"=>"en", "id"=>"37", "translation"=>{"these"=>"params"}}
+Rendering template within layouts/translations
+Rendering translations/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en/translations/37?translation%5Bthese%5D=params]
+
+
+Processing TranslationsController#update (for 0.0.0.0 at 2009-12-14 13:00:28) [PUT]
+  Parameters: {"locale_id"=>"en", "id"=>"1"}
+Rendering template within layouts/translations
+Rendering translations/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en/translations/1]
+
+
+Processing TranslationsController#update (for 0.0.0.0 at 2009-12-14 13:00:28) [PUT]
+  Parameters: {"locale_id"=>"en", "id"=>"1"}
+Rendering template within layouts/translations
+Rendering translations/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en/translations/1]
+
+
+Processing TranslationsController#update (for 0.0.0.0 at 2009-12-14 13:00:28) [PUT]
+  Parameters: {"locale_id"=>"en", "id"=>"37", "translation"=>{"these"=>"params"}}
+Rendering template within layouts/translations
+Rendering translations/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en/translations/37?translation%5Bthese%5D=params]
+
+
+Processing TranslationsController#update (for 0.0.0.0 at 2009-12-14 13:00:28) [PUT]
+  Parameters: {"locale_id"=>"en", "id"=>"1"}
+Redirected to http://test.host/locales/en/translations/1030
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/locales/en/translations/1]
+
+
+Processing TranslationsController#update (for 0.0.0.0 at 2009-12-14 13:00:28) [PUT]
+  Parameters: {"locale_id"=>"en", "id"=>"1"}
+Redirected to http://test.host/locales/en/translations/1032
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/locales/en/translations/1]
+
+
+Processing TranslationsController#create (for 0.0.0.0 at 2009-12-14 13:00:28) [POST]
+  Parameters: {"locale_id"=>"en", "translation"=>{"these"=>"params"}}
+Rendering template within layouts/translations
+Rendering translations/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en/translations?translation%5Bthese%5D=params]
+
+
+Processing TranslationsController#create (for 0.0.0.0 at 2009-12-14 13:00:28) [POST]
+  Parameters: {"locale_id"=>"en", "translation"=>{}}
+Rendering template within layouts/translations
+Rendering translations/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en/translations?]
+
+
+Processing TranslationsController#create (for 0.0.0.0 at 2009-12-14 13:00:28) [POST]
+  Parameters: {"locale_id"=>"en", "translation"=>{"these"=>"params"}}
+Redirected to http://test.host/locales/en/translations/1038
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/locales/en/translations?translation%5Bthese%5D=params]
+
+
+Processing TranslationsController#create (for 0.0.0.0 at 2009-12-14 13:00:28) [POST]
+  Parameters: {"locale_id"=>"en", "translation"=>{}}
+Redirected to http://test.host/locales/en/translations/1040
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/locales/en/translations?]
+
+
+Processing TranslationsController#edit (for 0.0.0.0 at 2009-12-14 13:00:28) [GET]
+  Parameters: {"locale_id"=>"en", "id"=>"37"}
+Rendering template within layouts/translations
+Rendering translations/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en/translations/37/edit]
+
+
+Processing TranslationsController#new (for 0.0.0.0 at 2009-12-14 13:00:28) [GET]
+  Parameters: {"locale_id"=>"en"}
+Rendering template within layouts/translations
+Rendering translations/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en/translations/new]
+
+
+Processing TranslationsController#show (for 0.0.0.0 at 2009-12-14 13:00:28) [GET]
+  Parameters: {"locale_id"=>"en", "id"=>"37"}
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en/translations/37]
+
+
+Processing TranslationsController#show (for 0.0.0.0 at 2009-12-14 13:00:28) [GET]
+  Parameters: {"locale_id"=>"en", "id"=>"37"}
+Rendering template within layouts/translations
+Rendering translations/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en/translations/37]
+
+
+Processing TranslationsController#index (for 0.0.0.0 at 2009-12-14 13:00:28) [GET]
+  Parameters: {"locale_id"=>"en"}
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en/translations]
+
+
+Processing TranslationsController#index (for 0.0.0.0 at 2009-12-14 13:00:28) [GET]
+  Parameters: {"locale_id"=>"en"}
+Rendering template within layouts/translations
+Rendering translations/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en/translations]
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" [0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT * FROM "locales" [0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" [0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT * FROM "locales" [0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT * FROM "locales" [0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT * FROM "locales" [0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT * FROM "locales" [0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT * FROM "locales" [0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT * FROM "locales" [0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT * FROM "locales" [0m
+  [4;35;1mLocale Load (0.1ms)[0m   [0mSELECT * FROM "locales" [0m
+
+
+Processing LocalesController#destroy (for 0.0.0.0 at 2009-12-14 13:00:28) [DELETE]
+  Parameters: {"id"=>"en"}
+Redirected to http://test.host/locales
+Completed in 2ms (DB: 1) | 302 Found [http://test.host/locales/en]
+
+
+Processing LocalesController#destroy (for 0.0.0.0 at 2009-12-14 13:00:28) [DELETE]
+  Parameters: {"id"=>"en"}
+Redirected to http://test.host/locales
+Completed in 0ms (DB: 0) | 302 Found [http://test.host/locales/en]
+
+
+Processing LocalesController#update (for 0.0.0.0 at 2009-12-14 13:00:28) [PUT]
+  Parameters: {"id"=>"en", "locale"=>{"these"=>"params"}}
+Rendering locales/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en?locale%5Bthese%5D=params]
+
+
+Processing LocalesController#update (for 0.0.0.0 at 2009-12-14 13:00:28) [PUT]
+  Parameters: {"id"=>"en"}
+Rendering locales/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en]
+
+
+Processing LocalesController#update (for 0.0.0.0 at 2009-12-14 13:00:28) [PUT]
+  Parameters: {"id"=>"en"}
+Rendering locales/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en]
+
+
+Processing LocalesController#update (for 0.0.0.0 at 2009-12-14 13:00:28) [PUT]
+  Parameters: {"id"=>"en", "locale"=>{"these"=>"params"}}
+Rendering locales/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en?locale%5Bthese%5D=params]
+
+
+Processing LocalesController#update (for 0.0.0.0 at 2009-12-14 13:00:28) [PUT]
+  Parameters: {"id"=>"en"}
+Redirected to http://test.host/locales/1058
+Completed in 2ms (DB: 0) | 302 Found [http://test.host/locales/en]
+
+
+Processing LocalesController#update (for 0.0.0.0 at 2009-12-14 13:00:28) [PUT]
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/locales/1059
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/locales/1]
+
+
+Processing LocalesController#create (for 0.0.0.0 at 2009-12-14 13:00:28) [POST]
+  Parameters: {"locale"=>{"these"=>"params"}}
+Rendering locales/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales?locale%5Bthese%5D=params]
+
+
+Processing LocalesController#create (for 0.0.0.0 at 2009-12-14 13:00:28) [POST]
+  Parameters: {"locale"=>{}}
+Rendering locales/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales?]
+
+
+Processing LocalesController#create (for 0.0.0.0 at 2009-12-14 13:00:28) [POST]
+  Parameters: {"locale"=>{"these"=>"params"}}
+Redirected to http://test.host/locales/1062
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/locales?locale%5Bthese%5D=params]
+
+
+Processing LocalesController#create (for 0.0.0.0 at 2009-12-14 13:00:28) [POST]
+  Parameters: {"locale"=>{}}
+Redirected to http://test.host/locales/1063
+Completed in 1ms (DB: 0) | 302 Found [http://test.host/locales?]
+
+
+Processing LocalesController#edit (for 0.0.0.0 at 2009-12-14 13:00:28) [GET]
+  Parameters: {"id"=>"en"}
+Rendering locales/edit
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en/edit]
+
+
+Processing LocalesController#new (for 0.0.0.0 at 2009-12-14 13:00:28) [GET]
+Rendering locales/new
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/new]
+
+
+Processing LocalesController#show (for 0.0.0.0 at 2009-12-14 13:00:28) [GET]
+  Parameters: {"id"=>"en"}
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en]
+
+
+Processing LocalesController#show (for 0.0.0.0 at 2009-12-14 13:00:28) [GET]
+  Parameters: {"id"=>"en"}
+Rendering locales/show
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales/en]
+
+
+Processing LocalesController#index (for 0.0.0.0 at 2009-12-14 13:00:28) [GET]
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales]
+
+
+Processing LocalesController#index (for 0.0.0.0 at 2009-12-14 13:00:28) [GET]
+Rendering locales/index
+Completed in 1ms (View: 0, DB: 0) | 200 OK [http://test.host/locales]
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.1ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+  [4;35;1mLocale Create (0.1ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'es')[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.messages.blank', 'is blank moron!', 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'es') LIMIT 1[0m
+Cache exist?: es:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 2) [0m
+Cache write: es:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+Cache exist?: es:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=') AND ("translations".locale_id = 2) [0m
+Cache write: es:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache exist?: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache exist?: es:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=') AND ("translations".locale_id = 2) [0m
+Cache write: es:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+Cache exist?: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;36;1mTranslation Load (0.2ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;35;1mTranslation Create (0.3ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(2, 'activerecord.errors.messages.blank', NULL, 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+Cache write: es:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+Cache exist?: es:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+Cache exist?: es:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache exist?: es:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+Cache read: es:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+Cache read: es:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache read: es:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+Cache exist?: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+Cache exist?: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache exist?: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+Cache read: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+Cache read: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache read: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mTranslation Create (0.1ms)[0m   [0;1mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'activerecord.errors.messages.blank', 'is blank moron!', 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=', 1)[0m
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+  [4;35;1mLocale Load (0.2ms)[0m   [0mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache exist?: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;35;1mTranslation Load (0.2ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=') AND ("translations".locale_id = 1) [0m
+Cache write: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+Cache exist?: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+Cache exist?: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache exist?: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+Cache read: en:ZGZlOWVkMDhmNTZkOTYyYWQ1Y2JiNGQ4MmU0ZjJhNzk=
+Cache read: en:NGVmMjZjMDYwMDI4YjU3MDJjMzEyMjExMzYyOWRjNjY=
+Cache read: en:OGMxZWE0MGQ5ZWM4NWVmNWE4YjlhMWFiMzg2MTNlMDY=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT "locales".id FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mLocale Create (0.3ms)[0m   [0mINSERT INTO "locales" ("name", "code") VALUES(NULL, 'en')[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+Cache exist?: en:NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations"."key" = 'NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=') AND ("translations".locale_id = 1) [0m
+Cache write: en:NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."code" = 'en') LIMIT 1[0m
+  [4;35;1mTranslation Load (0.1ms)[0m   [0mSELECT * FROM "translations" WHERE ("translations".locale_id = 1 AND (raw_key like 'blah.%')) [0m
+  [4;36;1mTranslation Load (0.1ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."pluralization_index" = 1 AND "translations"."key" = 'NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;35;1mTranslation Create (0.2ms)[0m   [0mINSERT INTO "translations" ("locale_id", "raw_key", "value", "key", "pluralization_index") VALUES(1, 'blah', 'blah', 'NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=', 1)[0m
+Cache write: en:NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=
+Cache read: en:NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=
+  [4;36;1mTranslation Load (0.3ms)[0m   [0;1mSELECT * FROM "translations" WHERE ("translations"."key" = 'NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=') AND ("translations".locale_id = 1) LIMIT 1[0m
+  [4;35;1mTranslation Update (0.1ms)[0m   [0mUPDATE "translations" SET "value" = 'foo' WHERE "id" = 1[0m
+  [4;36;1mLocale Load (0.2ms)[0m   [0;1mSELECT * FROM "locales" WHERE ("locales"."id" = 1) [0m
+Cache write: en:NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=
+Cache read: en:NmYxZWQwMDJhYjU1OTU4NTkwMTRlYmYwOTUxNTIyZDk=

@@ -1,0 +1,3 @@
+[submodule "vendor/plugins/i18n_backend_database"]
+	path = vendor/plugins/i18n_backend_database
+	url = git://github.com/dylanz/i18n_backend_database.git

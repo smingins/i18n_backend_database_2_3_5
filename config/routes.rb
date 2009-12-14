@@ -1,4 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
+  map.from_plugin 'i18n_backend_database'
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:
