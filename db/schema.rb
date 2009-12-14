@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20091213235643) do
+ActiveRecord::Schema.define(:version => 20091214025026) do
 
   create_table "locales", :force => true do |t|
     t.string "code"
@@ -27,5 +27,13 @@ ActiveRecord::Schema.define(:version => 20091213235643) do
   end
 
   add_index "translations", ["locale_id", "key", "pluralization_index"], :name => "index_translations_on_locale_id_and_key_and_pluralization_index"
+
+  create_table "users", :force => true do |t|
+    t.string   "login"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end
